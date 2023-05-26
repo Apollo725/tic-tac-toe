@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 1rem;
+  font-size: 2rem;
+}
