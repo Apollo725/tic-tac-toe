@@ -33,7 +33,9 @@ const Board = () => {
 
   const winner = calculateWinner(board);
   const status = winner
-    ? `Winner: ${winner}`
+    ? winner === "draw"
+      ? "Draw"
+      : `Winner: ${winner}`
     : `Next player: ${xIsNext ? "X" : "O"}`;
 
   return (

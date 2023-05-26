@@ -16,7 +16,7 @@ const calculateWinner = (board) => {
       return board[a];
     }
   }
-
+  if (!board.includes(null)) return "draw";
   return null;
 };
 
